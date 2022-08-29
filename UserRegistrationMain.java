@@ -12,6 +12,7 @@ public class UserRegistrationMain {
         UserRegistrationRegex user = new UserRegistrationRegex();
 
         user.validFirstName();
+        user.validLastName();
 
     }
 
