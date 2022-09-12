@@ -69,4 +69,19 @@ public class UserRegistration {
             return "Happy";
         }
     }
+
+    //Uc9 - Validate email sets using regex
+    public static String validEMailSet(String eMail) {
+        String regex = ("^[a-zA-Z0-9]+{2,}[- . + _]?[a-zA-Z0-9]{2,}[@](?:([0-9]{1}|[a-zA-Z]{3,5})\\.)+[a-zA-Z]{2,3}");
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(eMail);
+        if (matcher.matches()) {
+            return "Happy";
+        }
+        else {
+            return "Sad";
+        }
+
+    }
 }
